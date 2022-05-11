@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="desktop.FXMLDocumentController">
+    <children>
+      <AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="397.0">
+         <children>
+            <Label layoutX="136.0" layoutY="26.0" text="Nota Pembelian">
+               <font>
+                  <Font name="Eras Bold ITC" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="65.0" text="Merek">
+               <font>
+                  <Font name="Eras Demi ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="95.0" text="Jenis">
+               <font>
+                  <Font name="Eras Demi ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="128.0" text="Harga">
+               <font>
+                  <Font name="Eras Demi ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="162.0" text="Jumlah Fan">
+               <font>
+                  <Font name="Eras Demi ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="191.0" text="Tanggal Pembelian">
+               <font>
+                  <Font name="Eras Demi ITC" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_merek" layoutX="234.0" layoutY="61.0" promptText="masukan merek" />
+            <RadioButton fx:id="rd_gaming" layoutX="232.0" layoutY="96.0" mnemonicParsing="false" text="Gaming">
+               <font>
+                  <Font name="Eras Demi ITC" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rd_normal" layoutX="319.0" layoutY="95.0" mnemonicParsing="false" text="Normal" />
+            <TextField fx:id="tf_fan" layoutX="234.0" layoutY="124.0" promptText="masukan harga" />
+            <TextField fx:id="tf_jumlah" layoutX="234.0" layoutY="158.0" promptText="masukan jumlah fan" />
+            <DatePicker fx:id="dp_beli" layoutX="234.0" layoutY="197.0" prefHeight="25.0" prefWidth="149.0" />
+              <Button fx:id="button" layoutX="166.0" layoutY="244.0" onAction="#handleButtonAction" text="Simpan" />
+              <Label fx:id="label" layoutX="159.0" layoutY="274.0" minHeight="16" minWidth="69" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
